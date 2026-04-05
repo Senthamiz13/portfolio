@@ -27,15 +27,17 @@ function setTheme(theme) {
         localStorage.setItem('portfolioTheme', 'dark');
         document.getElementById('themeToggle').querySelector('.theme-icon').textContent = '🌙';
     }
+    currentTheme = theme;
 }
+
+let currentTheme = 'dark';
 
 // Setup theme toggle
 function setupThemeToggle() {
     const themeToggle = document.getElementById('themeToggle');
     themeToggle.addEventListener('click', () => {
-        const html = document.documentElement;
-        const isDark = !html.classList.contains('theme-light');
-        setTheme(isDark ? 'light' : 'dark');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
     });
 }
 
@@ -53,9 +55,6 @@ function renderPortfolio() {
 function renderHero() {
     document.getElementById('heroName').textContent = portfolioConfig.name;
     document.getElementById('heroProfession').textContent = portfolioConfig.profession;
-    const profileImg = document.getElementById('profileImage');
-    profileImg.src = portfolioConfig.profileImage;
-    profileImg.alt = portfolioConfig.name;
 }
 
 // Render skills section
@@ -230,27 +229,5 @@ function setupSmoothScrolling() {
 
 // Add scroll animation for cards
 function setupScrollAnimations() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    // Observe skill cards and project cards
-    setTimeout(() => {
-        document.querySelectorAll('.skill-card, .experience-card, .project-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
-        });
-    }, 0);
+    // Scroll animations disabled for minimalist portfolio design
 }

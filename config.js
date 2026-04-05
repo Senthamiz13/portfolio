@@ -5,7 +5,6 @@ const portfolioConfig = {
     // Personal Information
     name: "Senthamizhan M",
     profession: "Full Stack Engineer | Java Backend | IoT & Real-time Systems",
-    profileImage: "resources/images/profile.jpg",
     
     // Skills Section
     skills: [
