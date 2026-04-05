@@ -7,37 +7,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <!-- Hero Header -->
+    <header class="hero" id="heroHeader">
+        <div class="hero-content">
+            <img id="profileImage" class="profile-image" alt="Profile" />
+            <div class="hero-text">
+                <h1 class="name" id="heroName"></h1>
+                <p class="profession" id="heroProfession"></p>
+            </div>
+        </div>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! I am a [your profession, e.g., developer/designer]. Here you can find information about my skills, projects, and how to get in touch.</p>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1. Technologies used: HTML, CSS, JS.</p>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Featured Projects</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="theme-icon">🌙</span>
+        </button>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <h2>Skills</h2>
+        <div class="skills-grid" id="skillsContainer"></div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section experience-section">
+        <h2>Work Experience</h2>
+        <div class="experience-grid" id="experienceContainer"></div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid" id="projectsContainer"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Let's Connect</h2>
+        <div class="contact-content">
+            <p>I'm always interested in hearing about new projects and opportunities.</p>
+            <div class="contact-links" id="contactLinksContainer"></div>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 My Name. All rights reserved.</p>
+        <p id="footerText"></p>
     </footer>
+
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
