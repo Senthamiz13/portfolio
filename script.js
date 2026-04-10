@@ -70,16 +70,16 @@ function renderSkills() {
         title.textContent = skillGroup.category;
         skillCard.appendChild(title);
         
-        const tagContainer = document.createElement('div');
-        tagContainer.className = 'skill-tags';
+        const skillsContainer_inner = document.createElement('div');
+        skillsContainer_inner.className = 'skills-flow';
         skillGroup.items.forEach(item => {
-            const tag = document.createElement('span');
-            tag.className = 'skill-tag';
-            tag.textContent = item;
-            tagContainer.appendChild(tag);
+            const skillItem = document.createElement('span');
+            skillItem.className = 'skill-item';
+            skillItem.textContent = item;
+            skillsContainer_inner.appendChild(skillItem);
         });
         
-        skillCard.appendChild(tagContainer);
+        skillCard.appendChild(skillsContainer_inner);
         skillsContainer.appendChild(skillCard);
     });
 }
