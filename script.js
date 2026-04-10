@@ -70,14 +70,16 @@ function renderSkills() {
         title.textContent = skillGroup.category;
         skillCard.appendChild(title);
         
-        const list = document.createElement('ul');
+        const tagContainer = document.createElement('div');
+        tagContainer.className = 'skill-tags';
         skillGroup.items.forEach(item => {
-            const li = document.createElement('li');
-            li.textContent = item;
-            list.appendChild(li);
+            const tag = document.createElement('span');
+            tag.className = 'skill-tag';
+            tag.textContent = item;
+            tagContainer.appendChild(tag);
         });
         
-        skillCard.appendChild(list);
+        skillCard.appendChild(tagContainer);
         skillsContainer.appendChild(skillCard);
     });
 }
@@ -125,16 +127,13 @@ function renderProjects() {
         const projectCard = document.createElement('div');
         projectCard.className = 'project-card';
         
-        // Project Header
-        const header = document.createElement('div');
-        header.className = 'project-header';
-        
+        // Project Title
         const title = document.createElement('h3');
         title.textContent = project.title;
-        header.appendChild(title);
+        projectCard.appendChild(title);
         
         // Tech Tags
-        const tags = document.createElement('span');
+        const tags = document.createElement('div');
         tags.className = 'tech-tags';
         project.technologies.forEach(tech => {
             const tag = document.createElement('span');
@@ -142,8 +141,7 @@ function renderProjects() {
             tag.textContent = tech;
             tags.appendChild(tag);
         });
-        header.appendChild(tags);
-        projectCard.appendChild(header);
+        projectCard.appendChild(tags);
         
         // Description
         const description = document.createElement('p');

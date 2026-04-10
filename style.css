@@ -218,26 +218,27 @@ body {
     letter-spacing: -0.2px;
 }
 
-.skill-card ul {
-    list-style: none;
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: 0.6em;
 }
 
-.skill-card li {
-    padding: 0.2em 0;
+.skill-tag {
+    background-color: var(--bg-secondary);
     color: var(--text-secondary);
-    font-size: 0.9em;
+    padding: 0.3em 0.8em;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
     transition: all 0.2s ease;
 }
 
-.skill-card li:hover {
+.skill-tag:hover {
+    background-color: var(--border-color);
     color: var(--text-primary);
-}
-
-.skill-card li::before {
-    content: '–';
-    color: var(--text-secondary);
-    font-weight: 700;
-    margin-right: 0.6em;
 }
 
 /* Projects Section */
@@ -373,12 +374,14 @@ body {
     flex: 1;
     font-weight: 600;
     letter-spacing: -0.2px;
+    margin-bottom: 1em;
 }
 
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em;
+    margin-bottom: 0.8em;
 }
 
 .tag {
@@ -400,6 +403,9 @@ body {
 .project-card p {
     color: var(--text-secondary);
     margin-bottom: 0.8em;
+    margin-top: 0.8em;
+    padding-top: 0.8em;
+    border-top: 1px solid var(--border-color);
     flex-grow: 1;
     font-size: 0.9em;
     line-height: 1.5;

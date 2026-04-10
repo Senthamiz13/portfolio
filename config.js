@@ -5,7 +5,7 @@ const portfolioConfig = {
     // Personal Information
     name: "Senthamizhan M",
     profession: "Full Stack Engineer | Java Backend | IoT & Real-time Systems",
-    
+
     // Skills Section
     skills: [
         {
@@ -29,7 +29,7 @@ const portfolioConfig = {
             items: ["GitHub", "ServiceNow", "Linux"]
         }
     ],
-    
+
     // Experience Section
     experience: [
         {
@@ -63,29 +63,30 @@ const portfolioConfig = {
             ]
         }
     ],
-    
+
     // Featured Projects Section
     projects: [
         {
-            title: "Project 1",
-            description: "A brief description of your hobby project. What problem does it solve? What did you learn?",
-            technologies: ["HTML", "CSS", "JavaScript"],
+            title: "CovidShield – Smart Safety Automation System",
+            description: "An Android-based IoT system that automates COVID-19 safety protocols using computer vision and hardware integration. Performs real-time mask detection using TensorFlow Lite, triggers temperature checks via USB UART, and enables contactless sanitization and automated access control using a state-driven workflow.",
+            technologies: ["Android (Kotlin)", "TensorFlow Lite", "CameraX", "USB UART", "Arduino", "Computer Vision"],
             link: "#"
         },
         {
-            title: "Project 2",
-            description: "Another interesting side project showcasing your creativity and technical skills.",
-            technologies: ["React", "Node.js"],
+            title: "Slave Android System – Real-time IoT Control Platform",
+            description: "A modular Android-based remote device controller designed for real-time monitoring and hardware interaction. Integrates WebRTC for low-latency video streaming, Firebase for remote command/control, USB UART for microcontroller communication, and TensorFlow Lite for on-device vision processing. Runs as a foreground service enabling persistent, headless operation.",
+            technologies: ["Android (Kotlin)", "WebRTC", "Firebase Realtime DB", "USB UART", "TensorFlow Lite", "Room DB"],
             link: "#"
         },
         {
-            title: "Project 3",
-            description: "Describe your third project and the technologies you used to build it.",
-            technologies: ["Python", "API"],
+            title: "Master NG Web – Remote Device Control Dashboard",
+            description: "A web-based control panel built with Angular that manages and interacts with remote Android slave devices. Implements WebRTC for real-time video streaming and Firebase for signaling and device orchestration. Supports live device monitoring, joystick-based control, and bidirectional communication with hardware systems.",
+            technologies: ["Angular", "WebRTC", "Firebase Realtime DB", "TypeScript", "SCSS"],
             link: "#"
-        }
+        },
+        
     ],
-    
+
     // Contact Information
     contact: {
         email: "senthamiz13.98@gmail.com",
@@ -93,7 +94,7 @@ const portfolioConfig = {
         linkedin: "https://linkedin.com/in/senthamiz",
         twitter: "https://twitter.com/yourprofile"
     },
-    
+
     // Footer
     year: new Date().getFullYear()
 };
