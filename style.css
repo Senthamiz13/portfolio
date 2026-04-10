@@ -187,15 +187,14 @@ body {
 
 /* Skills Section */
 .skills-grid {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.2em;
-    align-items: stretch;
 }
 
 @media (max-width: 768px) {
     .skills-grid {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -223,7 +222,6 @@ body {
     font-size: 1em;
     font-weight: 600;
     letter-spacing: -0.2px;
-    white-space: nowrap;
 }
 
 .skills-flow {
