@@ -1,48 +1,108 @@
 const portfolioConfig = {
     // Personal Information
     name: "Senthamizhan M",
-    profession: "Full Stack Engineer | Java Backend | IoT & Real-time Systems",
+    profession: "Full Stack Engineer | Java Backend | IoT, CAD & Real-time Systems",
 
     // Skills Section
     skills: [
         {
             category: "Frontend",
-            items: ["Angular", "JavaScript", "TypeScript", "HTML5", "CSS", "JSP", "JSF"]
+            items: [
+                "Angular",
+                "JavaScript",
+                "TypeScript",
+                "HTML5",
+                "CSS",
+                "JSP",
+                "JSF"
+            ]
         },
         {
             category: "Backend",
-            items: ["Java", "Spring", "Spring Boot", "REST APIs", "SOAP APIs", "Microservices", "Hibernate", "JPA", "JDBC", "MyBatis"]
+            items: [
+                "Java",
+                "Spring",
+                "Spring Boot",
+                "REST APIs",
+                "SOAP APIs",
+                "Microservices",
+                "Hibernate",
+                "JPA",
+                "JDBC",
+                "MyBatis"
+            ]
         },
         {
             category: "Mobile & IoT",
-            items: ["Android (Kotlin)", "USB UART", "Arduino Integration", "Embedded Communication"]
+            items: [
+                "Android (Kotlin)",
+                "USB UART",
+                "Arduino Integration",
+                "Embedded Communication"
+            ]
         },
         {
             category: "Real-time & Systems",
-            items: ["WebRTC", "Firebase Realtime Database", "Distributed Systems", "State Machine Design"]
+            items: [
+                "WebRTC",
+                "Firebase Realtime Database",
+                "Distributed Systems",
+                "State Machine Design"
+            ]
         },
         {
             category: "AI / Computer Vision",
-            items: ["TensorFlow Lite", "CameraX", "On-device ML Inference"]
+            items: [
+                "TensorFlow Lite",
+                "CameraX",
+                "On-device ML Inference"
+            ]
         },
         {
             category: "Testing & Quality",
-            items: ["Cucumber", "Gherkin (BDD)", "Postman", "SOAP UI", "SonarQube"]
+            items: [
+                "Cucumber",
+                "Gherkin (BDD)",
+                "Postman",
+                "SOAP UI",
+                "SonarQube"
+            ]
         },
         {
             category: "Cloud & DevOps",
-            items: ["AWS (EC2, S3, RDS, ECS)", "Docker", "Jenkins"]
+            items: [
+                "AWS (EC2, S3, RDS, ECS)",
+                "Docker",
+                "Jenkins"
+            ]
+        },
+        {
+            category: "CAD & Digital Fabrication",
+            items: [
+                "Fusion 360",
+                "3D CAD Design",
+                "Parametric Modeling",
+                "3D Printing",
+                "Prototype Design",
+                "Mechanical Assembly Design",
+                "Product Design",
+                "Rapid Prototyping"
+            ]
         },
         {
             category: "Tools & Systems",
-            items: ["GitHub", "ServiceNow", "Linux"]
+            items: [
+                "GitHub",
+                "ServiceNow",
+                "Linux"
+            ]
         }
     ],
 
     // Experience Section
     experience: [
         {
-            role: "Techonology Associate - Java Full Stack Developer",
+            role: "Technology Associate - Java Full Stack Developer",
             company: "Synechron Technologies",
             period: "Oct 2024 - Present",
             description: [
@@ -77,19 +137,39 @@ const portfolioConfig = {
         {
             title: "CovidShield - Smart Safety Automation System",
             description: "An Android-based IoT system that automates COVID-19 safety protocols using computer vision and hardware integration. Performs real-time mask detection using TensorFlow Lite, triggers temperature checks via USB UART, and enables contactless sanitization and automated access control using a state-driven workflow.",
-            technologies: ["Android (Kotlin)", "TensorFlow Lite", "CameraX", "USB UART", "Arduino", "Computer Vision"],
+            technologies: [
+                "Android (Kotlin)",
+                "TensorFlow Lite",
+                "CameraX",
+                "USB UART",
+                "Arduino",
+                "Computer Vision"
+            ],
             link: "https://github.com/Senthamiz13/CovidShield.git"
         },
         {
             title: "Slave Android System - Real-time IoT Control Platform",
             description: "A modular Android-based remote device controller designed for real-time monitoring and hardware interaction. Integrates WebRTC for low-latency video streaming, Firebase for remote command/control, USB UART for microcontroller communication, and TensorFlow Lite for on-device vision processing. Runs as a foreground service enabling persistent, headless operation.",
-            technologies: ["Android (Kotlin)", "WebRTC", "Firebase Realtime DB", "USB UART", "TensorFlow Lite", "Room DB"],
+            technologies: [
+                "Android (Kotlin)",
+                "WebRTC",
+                "Firebase Realtime DB",
+                "USB UART",
+                "TensorFlow Lite",
+                "Room DB"
+            ],
             link: "https://github.com/Senthamiz13/Slave.git"
         },
         {
             title: "Master NG Web - Remote Device Control Dashboard",
             description: "A web-based control panel built with Angular that manages and interacts with remote Android slave devices. Implements WebRTC for real-time video streaming and Firebase for signaling and device orchestration. Supports live device monitoring, joystick-based control, and bidirectional communication with hardware systems.",
-            technologies: ["Angular", "WebRTC", "Firebase Realtime DB", "TypeScript", "SCSS"],
+            technologies: [
+                "Angular",
+                "WebRTC",
+                "Firebase Realtime DB",
+                "TypeScript",
+                "SCSS"
+            ],
             link: "https://hv-app-199a9.web.app"
         }
     ],
@@ -98,7 +178,7 @@ const portfolioConfig = {
     contact: {
         email: "senthamiz13.98@gmail.com",
         github: "https://github.com/Senthamiz13",
-        linkedin: "https://linkedin.com/in/senthamiz",
+        linkedin: "https://linkedin.com/in/senthamiz"
     },
 
     // Footer
