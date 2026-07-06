@@ -81,12 +81,8 @@ const portfolioConfig = {
             items: [
                 "Fusion 360",
                 "3D CAD Design",
-                "Parametric Modeling",
                 "3D Printing",
                 "Prototype Design",
-                "Mechanical Assembly Design",
-                "Product Design",
-                "Rapid Prototyping"
             ]
         },
         {
